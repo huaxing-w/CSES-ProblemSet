@@ -17,7 +17,7 @@ using pii=pair<int,int>;
 正着枚举，差分的思想，在bit上数这一段这一段有多少个已有的range
 
 小细节1，排序的时候，为什么要这样？
-    sort(v.begin(),v.end(),[](auto a, auto b){
+    sort(v1.begin(),v1.end(),[](auto a, auto b){
         if(a.first.first==b.first.first){
             return a.first.second>b.first.second;
         }
@@ -79,11 +79,11 @@ int main(){
     int n;
     cin>>n;
     set<int>seen;
-    vector<pair<pii,int>>v(n);
+    vector<pair<pii,int>>v1(n);
     for(int i=0;i<n;i++){
         int x,y;
         cin>>x>>y;
-        v[i]={{x,y},i};
+        v1[i]={{x,y},i};
         seen.insert(y);
     }
     int count=0;
@@ -92,7 +92,7 @@ int main(){
         mp[i]=++count;
     }
 
-    sort(v.begin(),v.end(),[](auto a, auto b){
+    sort(v1.begin(),v1.end(),[](auto a, auto b){
         if(a.first.first==b.first.first){
             return a.first.second>b.first.second;
         }
@@ -100,10 +100,10 @@ int main(){
     });
     int ans[n]={0};
     bit tree;
-    tree.update(count,mp[v[n-1].first.second],1);
+    tree.update(count,mp[v1[n-1].first.second],1);
     for(int i=n-2;i>=0;i--){
-        ans[v[i].second]=tree.query(mp[v[i].first.second]);
-        tree.update(count,mp[v[i].first.second],1);
+        ans[v1[i].second]=tree.query(mp[v1[i].first.second]);
+        tree.update(count,mp[v1[i].first.second],1);
     }
     for(int i=0;i<n;i++){
         cout<<(ans[i]>0)<<" ";
@@ -115,11 +115,11 @@ int main(){
     }
     tree.clear();
     tree.update(count,1,1);
-    tree.update(count,mp[v[0].first.second]+1,-1);
+    tree.update(count,mp[v1[0].first.second]+1,-1);
     for(int i=1;i<n;i++){
-        ans[v[i].second]=tree.query(mp[v[i].first.second]);
+        ans[v1[i].second]=tree.query(mp[v1[i].first.second]);
         tree.update(count,1,1);
-        tree.update(count,mp[v[i].first.second]+1,-1);
+        tree.update(count,mp[v1[i].first.second]+1,-1);
     }
     for(int i=0;i<n;i++){
         cout<<(ans[i]>0)<<" ";

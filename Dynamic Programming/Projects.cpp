@@ -1,6 +1,15 @@
 #include "bits/stdc++.h"
 using namespace std;
 using ll=long long;
+
+/*
+这是个非常经典的问题求最大值的
+要点就是找出最不冲突的最大值，然后更新dp
+但是细节比较多
+比如，dp[i]的意思是前i个最大值是多少，用index来做，而不是想当然的把所有可能的值都枚举出来
+
+
+*/
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
