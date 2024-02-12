@@ -2,7 +2,8 @@
 
 * 2024-02-12
     * 平常的一天没什么可说的
-        * 这道字典树的题目太经典了，背包->字典树->循环优化，学习到了不少
+        * [Word Combinations](https://github.com/huaxing-w/CSES-ProblemSet/blob/main/String%20Algorithms/Word_Combinations.cpp)
+            * 这道字典树的题目太经典了，背包->字典树->循环优化，学习到了不少
 * 2024-02-10
     * 新年快乐，希望自己新的一年能有所收获
         * 有一个经典的坐电梯问题，bitmask的具体应用
