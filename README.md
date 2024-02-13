@@ -1,6 +1,13 @@
 # [CSES-Problem Set](https://cses.fi/problemset/list/ "link")
 
 * 2024-02-12
+    * 开始吃素+少吃
+        * [String_Matching](https://github.com/huaxing-w/CSES-ProblemSet/blob/main/String%20Algorithms/String_Matching.cpp)
+            * 这个是一道非常经典的问题，这几年来我都一直用的是rolling hash来做这道题，前俩天学了下Z函数，才发现了新大陆
+            * Z函数就是生成一个z数组，数组中的每个数表示当前后缀可以匹配多少前缀
+        * [Finding_Borders.cpp](https://github.com/huaxing-w/CSES-ProblemSet/blob/main/String%20Algorithms/Finding_Borders.cpp)
+            * z函数模板题，就是让你学习z函数的
+* 2024-02-12
     * 平常的一天没什么可说的
         * [Word Combinations](https://github.com/huaxing-w/CSES-ProblemSet/blob/main/String%20Algorithms/Word_Combinations.cpp)
             * 这道字典树的题目太经典了，背包->字典树->循环优化，学习到了不少
