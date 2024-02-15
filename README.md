@@ -1,5 +1,17 @@
 # [CSES-Problem Set](https://cses.fi/problemset/list/ "link")
 
+* 2024-02-15
+    * 最近这几个题有点上强度了
+        * [Longest_Palindrome.cpp](https://github.com/huaxing-w/CSES-ProblemSet/blob/main/String%20Algorithms/Longest_Palindrome.cpp)
+            * 终于鼓起信心学习了马拉车算法，总算学会了，理解了以后甚至可以手搓
+            * 简单来说就是维护几个变量
+            * 通过对称点更新现在的点的半径
+            * 暴力枚举看能不能把盒子扩大的更大
+        * [Finding_Periods.cpp](https://github.com/huaxing-w/CSES-ProblemSet/blob/main/String%20Algorithms/Finding_Periods.cpp)
+            * z函数模板题
+        * [Minimal_Rotation.cpp](https://github.com/huaxing-w/CSES-ProblemSet/blob/main/String%20Algorithms/Minimal_Rotation.cpp)
+            * 这个题没有想明白
+            * 什么是最小表示法
 * 2024-02-12
     * 开始吃素+少吃
         * [String_Matching](https://github.com/huaxing-w/CSES-ProblemSet/blob/main/String%20Algorithms/String_Matching.cpp)
